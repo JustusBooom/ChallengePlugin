@@ -1,0 +1,8 @@
+name: ChallengePlugin
+version: ${project.version}
+main: de.justusbooom.challengeplugin.ChallengePlugin
+api-version: 1.16
+
+commands:
+  challenges:
+    description: Open a inventory with all settings!
