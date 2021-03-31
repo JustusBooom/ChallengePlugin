@@ -11,7 +11,7 @@ public class CoverItem {
     private String itemName;
     private ChatColor color;
     private int itemNumber;
-    private ItemMeta coverMeta = item.getItemMeta();
+    private ItemMeta coverMeta;
     private Inventory inv;
     private int invPosition;
 
@@ -30,6 +30,7 @@ public class CoverItem {
         this.itemNumber = itemNumber;
         this.inv = inv;
         this.invPosition = invPosition;
+        this.coverMeta = this.item.getItemMeta();
 
         this.coverMeta.setDisplayName(this.color + this.itemName);
         this.item.setAmount(this.itemNumber);

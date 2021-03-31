@@ -21,8 +21,8 @@ public class Config {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            cfg = YamlConfiguration.loadConfiguration(config);
         }
+        cfg = YamlConfiguration.loadConfiguration(config);
     }
 
     public static YamlConfiguration getCfg(){return cfg;}
